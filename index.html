@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moped Styling</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0b0b0b;
+      color: white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      opacity: 0.75;
+      margin-top: 0;
+    }
+
+    .models {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: #141414;
+      border-radius: 14px;
+      padding: 16px;
+      text-decoration: none;
+      color: white;
+      transition: background 0.2s ease;
+    }
+
+    .card:hover {
+      background: #1d1d1d;
+    }
+
+    .image {
+      background: #222;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .label {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    footer {
+      margin-top: 60px;
+      opacity: 0.4;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Välj din moped</h1>
+    <p>
+      Se styling som passar – och hur det ser ut monterat på just din modell.
+      Inga överdrifter. Man får det man ser.
+    </p>
+
+    <div class="models">
+      <a class="card" href="#">
+        <div class="image"></div>
+        <div class="label">Yamaha Aerox</div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="image"></div>
+        <div class="label">Derbi Senda</div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="image"></div>
+        <div class="label">Rieju MRT</div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="image"></div>
+        <div class="label">Peugeot Speedfight</div>
+      </a>
+    </div>
+
+    <footer>
+      © 2026 · Moped Styling · Bygger nytt i Sverige
+    </footer>
+  </div>
+</body>
+</html>
